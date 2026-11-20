@@ -31,8 +31,8 @@
    "svipsvip.ffzy"
   ],
   "regex": [
-   "#EXT-X-DISCONTINUITY(?:\n.*?){8}\n#EXT-X-DISCONTINUITY",
-   "#EXT-X-DISCONTINUITY(?:\n(?!#EXT-X-DISCONTINUITY).*){10}\n#EXT-X-DISCONTINUITY"
+   "#EXT-X-DISCONTINUITY(?:\\n.*?){8}\\n#EXT-X-DISCONTINUITY",
+   "#EXT-X-DISCONTINUITY(?:\\n(?!#EXT-X-DISCONTINUITY).*){10}\\n#EXT-X-DISCONTINUITY"
   ]
  },
  {
@@ -82,7 +82,7 @@
   ]
  },
  {
-  "name": "暴风广告",
+  "name": "暴风广告 #1",
   "hosts": [
    "bfzy",
    "bfbfvip",
@@ -114,7 +114,7 @@
   ]
  },
  {
-  "name": "暴风",
+  "name": "暴风 #1",
   "hosts": [
    "bfzy",
    "bfbfvip",
@@ -125,7 +125,7 @@
   ]
  },
  {
-  "name": "量子",
+  "name": "量子 #1",
   "hosts": [
    "vip.lz",
    "hd.lz",
@@ -140,7 +140,7 @@
   ]
  },
  {
-  "name": "非凡",
+  "name": "非凡 #1",
   "hosts": [
    "vip.ffzy",
    "hd.ffzy",
@@ -227,7 +227,7 @@
   ]
  },
  {
-  "name": "暴风",
+  "name": "暴风 #2",
   "hosts": [
    "bfzy"
   ],
@@ -236,7 +236,7 @@
   ]
  },
  {
-  "name": "量子",
+  "name": "量子 #2",
   "hosts": [
    "vip.lz",
    "hd.lz",
@@ -248,7 +248,7 @@
   ]
  },
  {
-  "name": "非凡",
+  "name": "非凡 #2",
   "hosts": [
    "vip.ffzy",
    "hd.ffzy"
@@ -292,7 +292,7 @@
   ]
  },
  {
-  "name": "暴风广告",
+  "name": "暴风广告 #2",
   "hosts": [
    "bfzy"
   ],
@@ -320,8 +320,8 @@
    "hd.ffzy"
   ],
   "regex": [
-   "#EXT-X-DISCONTINUITY\r*\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-   "#EXT-X-DISCONTINUITY\r*\n*#EXTINF:6.600000,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.600000,[\\s\\S]*?#EXT-X-DISCONTINUITY"
   ]
  },
  {
@@ -343,19 +343,19 @@
    "bfaskcdn"
   ],
   "regex": [
-   "#EXT-X-KEY:METHOD=NONE\r*\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
-   "#EXT-X-KEY:METHOD=AES-128,URI=\"[^\"]+\"\r*\n*#EXTINF:3.333,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXT-X-KEY:METHOD=AES-128,URI=\"[^\"]+\"\\r*\\n*#EXTINF:3.333,[\\s\\S]*?#EXT-X-DISCONTINUITY"
   ]
  },
  {
-  "name": "暴风",
+  "name": "暴风 #3",
   "hosts": [
    "bfengbf.com",
    "bfzy"
   ],
   "regex": [
    "#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+",
-   "#EXT-X-DISCONTINUITY\r*\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
   ]
  },
  {
@@ -404,6 +404,15 @@
   ],
   "regex": [
    "#EXT-X-CUE-OUT[\\s\\S]*?#EXT-X-CUE-IN"
+  ]
+ },
+ {
+  "name": "通用·博彩品牌域名",
+  "hosts": [
+   ""
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+.*?//[^/\\s]*(bet365|casino|bocai|caipiao|bbin|pgsoft|jdb|leyu|dafa|xinying)[^/\\s]*\\.[^/\\s]+/.*?\\.ts.*?\\s+"
   ]
  }
 ]
