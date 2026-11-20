@@ -405,5 +405,14 @@
   "regex": [
    "#EXT-X-CUE-OUT[\\s\\S]*?#EXT-X-CUE-IN"
   ]
+ },
+ {
+  "name": "通用·博彩品牌域名",
+  "hosts": [
+   ""
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+.*?//[^/\\s]*(bet365|casino|bocai|caipiao|bbin|pgsoft|jdb|leyu|dafa|xinying)[^/\\s]*\\.[^/\\s]+/.*?\\.ts.*?\\s+"
+  ]
  }
 ]
