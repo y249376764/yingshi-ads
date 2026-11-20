@@ -1,0 +1,392 @@
+[
+ {
+  "name": "星星",
+  "hosts": [
+   "aws.ulivetv.net"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:9,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "量子广告",
+  "hosts": [
+   "vip.lz",
+   "hd.lz",
+   "cdnlz"
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+[a-z0-9]{18,}\\.ts",
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?\\s+[a-z0-9]{18,}\\.ts[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "qihubf",
+  "hosts": [
+   "qihubf"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2,[\\s\\S]*?#EXT-X-DISCONTINUITY\\r*\\n*#EXT-X-KEY:METHOD=AES-128",
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "快看广告",
+  "hosts": [
+   "kuaikan"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:.*?,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "U酷资源广告",
+  "hosts": [
+   "ukzy"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:.*?,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "ikun资源",
+  "hosts": [
+   "bfikuncdn"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:.*?,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "卧龙影视资源",
+  "hosts": [
+   "cdn.wl"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:.*?,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "暴风广告 #1",
+  "hosts": [
+   "bfzy",
+   "bfbfvip",
+   "bfengbf"
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+"
+  ]
+ },
+ {
+  "name": "暴風",
+  "hosts": [
+   "bfzy"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "cdn.ryplay",
+  "hosts": [
+   "cdn.ryplay"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:5.480000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+  ]
+ },
+ {
+  "name": "暴风 #1",
+  "hosts": [
+   "bfzy",
+   "bfbfvip",
+   "bfengbf"
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+.*?adjump.*?\\.ts"
+  ]
+ },
+ {
+  "name": "量子 #1",
+  "hosts": [
+   "vip.lz",
+   "hd.lz",
+   "cdnlz"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXTINF.*?\\s+.*?08646.*?\\.ts",
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?6\\.667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXTINF.*?\\s+.*?48234.*?\\.ts",
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?7\\.067,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "非凡 #1",
+  "hosts": [
+   "vip.ffzy",
+   "hd.ffzy",
+   "super.ffzy",
+   "cachem3u8.2s0"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
+   "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
+   "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts"
+  ]
+ },
+ {
+  "name": "索尼",
+  "hosts": [
+   "suonizy"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts",
+   "#EXTINF.*?\\s+.*?\\/video\\/original.*?\\.ts"
+  ]
+ },
+ {
+  "name": "快看",
+  "hosts": [
+   "kuaikan"
+  ],
+  "regex": [
+   "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:2\\.4,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:1\\.467,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "ikun",
+  "hosts": [
+   "bfikuncdn"
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+.*?XR8pDxQk.*?\\.ts",
+   "#EXTINF.*?\\s+.*?p5XQill8.*?\\.ts"
+  ]
+ },
+ {
+  "name": "黑木耳hmr",
+  "hosts": [
+   "hmrvideo"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "ryplay",
+  "hosts": [
+   "cdn.ryplay"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
+   "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
+  ]
+ },
+ {
+  "name": "通用-广告片段过滤",
+  "hosts": [
+   ""
+  ],
+  "regex": [
+   "#EXTINF:\\s*([0-4]\\.\\d+|5\\.0),.*?(ad|promo|preroll|midroll|postroll)",
+   "#EXT-X-DISCONTINUITY[^#]*#EXTINF[^#]*adjump"
+  ]
+ },
+ {
+  "name": "海外看",
+  "hosts": [
+   "haiwaikan"
+  ],
+  "regex": [
+   "#EXTINF:(0|1|2|7\\.90).*?\\s+.*?921c07e8bfad6789.*?\\.ts\\s+"
+  ]
+ },
+ {
+  "name": "暴风 #2",
+  "hosts": [
+   "bfzy"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "量子 #2",
+  "hosts": [
+   "vip.lz",
+   "hd.lz",
+   "v.cdnlz"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.433333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+  ]
+ },
+ {
+  "name": "非凡 #2",
+  "hosts": [
+   "vip.ffzy",
+   "hd.ffzy"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+  ]
+ },
+ {
+  "name": "暴风廣告",
+  "hosts": [
+   "bfzy",
+   "s5.bfzycdn"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "量子廣告",
+  "hosts": [
+   "vip.lz",
+   "hd.lz",
+   "v.cdnlz"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.433333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+  ]
+ },
+ {
+  "name": "非凡廣告",
+  "hosts": [
+   "vip.ffzy",
+   "hd.ffzy"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+  ]
+ },
+ {
+  "name": "暴风广告 #2",
+  "hosts": [
+   "bfzy"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "星星广告",
+  "hosts": [
+   "aws.ulivetv.net"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "量子非凡",
+  "hosts": [
+   "vip.lz",
+   "v.cdnlz",
+   "hd.lz",
+   "ffzy",
+   "vip.ffzy",
+   "hd.ffzy"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.600000,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "360",
+  "hosts": [
+   "lyhuicheng"
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+.*?hrz8QcR9.*?\\.ts\\s+",
+   "#EXT-X-KEY:METHOD=NONE[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "开源棋牌",
+  "hosts": [
+   "askzycdn",
+   "jkunbf",
+   "bfikuncdn",
+   "bfaskcdn"
+  ],
+  "regex": [
+   "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "暴风 #3",
+  "hosts": [
+   "bfengbf.com",
+   "bfzy"
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+",
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "通用·广告目录 /ad/ /ads/ /adv/",
+  "hosts": [
+   ""
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+.*?/ads?/.*?\\.ts.*?\\s+",
+   "#EXTINF.*?\\s+.*?/adv/.*?\\.ts.*?\\s+",
+   "#EXTINF.*?\\s+.*?/advert/.*?\\.ts.*?\\s+"
+  ]
+ },
+ {
+  "name": "通用·贴片关键词 preroll/midroll",
+  "hosts": [
+   ""
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+.*?(preroll|midroll|commercial).*?\\.ts.*?\\s+"
+  ]
+ },
+ {
+  "name": "通用·混淆名 1o/p1ayer/gg/ad",
+  "hosts": [
+   ""
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+.*?/(1o|gg|p1ayer|guanggao)[0-9]*\\.ts.*?\\s+",
+   "#EXTINF.*?\\s+.*?/ad[0-9]*\\.ts.*?\\s+"
+  ]
+ },
+ {
+  "name": "通用·adjump 跳转广告",
+  "hosts": [
+   ""
+  ],
+  "regex": [
+   "#EXTINF.*?\\s+.*?adjump.*?\\.ts.*?\\s+"
+  ]
+ },
+ {
+  "name": "通用·SCTE35 CUE-OUT 广告段",
+  "hosts": [
+   ""
+  ],
+  "regex": [
+   "#EXT-X-CUE-OUT[\\s\\S]*?#EXT-X-CUE-IN"
+  ]
+ }
+]
