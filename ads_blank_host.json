@@ -20,44 +20,93 @@
   ]
  },
  {
-  "name": "通用·混淆广告分片名 1o/p1ayer/gg",
+  "name": "通用·混淆名 1o/p1ayer/gg/ad",
   "hosts": [
    ""
   ],
   "regex": [
-   "#EXTINF.*?\\s+.*?/(1o|ad|ads|gg|p1ayer|guanggao)[0-9]*\\.ts.*?\\s+"
+   "#EXTINF.*?\\s+.*?/(1o|gg|p1ayer|guanggao)[0-9]*\\.ts.*?\\s+",
+   "#EXTINF.*?\\s+.*?/ad[0-9]*\\.ts.*?\\s+"
   ]
  },
  {
-  "name": "暴风 bfzy·约3秒贴片",
+  "name": "通用·adjump 跳转广告",
   "hosts": [
-   "bfzy.tv",
-   "bfzycdn.com"
+   ""
   ],
   "regex": [
-   "#EXTINF:(2\\.9|3\\.0)[0-9]*,\\s+.*?\\.ts.*?\\s+"
+   "#EXTINF.*?\\s+.*?adjump.*?\\.ts.*?\\s+"
   ]
  },
  {
-  "name": "量子 lz·约6.43秒贴片",
+  "name": "通用·SCTE35 CUE-OUT 广告段",
+  "hosts": [
+   ""
+  ],
+  "regex": [
+   "#EXT-X-CUE-OUT[\\s\\S]*?#EXT-X-CUE-IN"
+  ]
+ },
+ {
+  "name": "暴风 bfzy·断点3秒",
+  "hosts": [
+   "bfzy",
+   "bfbfvip",
+   "bfengbf"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3(\\.[0-9]+)?,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "量子 lz·断点贴片",
   "hosts": [
    "vip.lz",
    "hd.lz",
    "cdnlz"
   ],
   "regex": [
-   "#EXTINF:6\\.[3-5][0-9]*,\\s+.*?\\.ts.*?\\s+"
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:(6\\.4[0-9]*|7\\.1[0-9]*|4\\.0[0-9]*),[\\s\\S]*?#EXT-X-DISCONTINUITY"
   ]
  },
  {
-  "name": "非凡 ffzy·约6.67秒贴片",
+  "name": "非凡 ffzy·断点贴片",
   "hosts": [
    "vip.ffzy",
    "hd.ffzy",
-   "super.ffzy"
+   "super.ffzy",
+   "ffzy"
   ],
   "regex": [
-   "#EXTINF:6\\.[6-7][0-9]*,\\s+.*?\\.ts.*?\\s+"
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:(6\\.4[0-9]*|6\\.6[0-9]*),[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "索尼 suonizy·断点1秒 + original",
+  "hosts": [
+   "suonizy"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1(\\.[0-9]+)?,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+   "#EXTINF.*?\\s+.*?/video/original.*?\\.ts.*?\\s+"
+  ]
+ },
+ {
+  "name": "快看 kuaikan·KEY=NONE 段",
+  "hosts": [
+   "kuaikan"
+  ],
+  "regex": [
+   "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:[0-9.]+,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+  ]
+ },
+ {
+  "name": "一起看 yqk88·CUE-IN 段",
+  "hosts": [
+   "yqk88"
+  ],
+  "regex": [
+   "#EXT-X-DISCONTINUITY\\r*\\n*[\\s\\S]*?#EXT-X-CUE-IN[\\s\\S]*?#EXT-X-DISCONTINUITY"
   ]
  }
 ]
